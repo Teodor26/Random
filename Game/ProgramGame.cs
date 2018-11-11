@@ -96,17 +96,17 @@ namespace Game
                         cheater.Rand(Numbers);
 
                     else
-                        uberCheater.Rand(Numbers);                 
-                  
+                        uberCheater.Rand(Numbers);
+
 
                     if (Numbers.Contains(Weight))
                     {
                         Console.WriteLine("This Player has won the game. Congratulations!!!");
                         finish = 0;
+                        break;
                     }
-                    finish = finish - 1;
-
                     
+                    finish = finish - 1;                    
                 }
 
                
