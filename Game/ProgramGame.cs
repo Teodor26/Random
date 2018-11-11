@@ -97,7 +97,7 @@ namespace Game
 
                     else
                         uberCheater.Rand(Numbers);
-
+                    finish = finish - 1;
 
                     if (Numbers.Contains(Weight))
                     {
@@ -105,8 +105,12 @@ namespace Game
                         finish = 0;
                         break;
                     }
-                    
-                    finish = finish - 1;                    
+                    else if(finish==0)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine("No one has't won.");
+                    }
+                                        
                 }
 
                
